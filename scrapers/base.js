@@ -117,11 +117,8 @@ class BaseLoklakScrapper {
 			return;
 		}
 
-		try {
-			this.onInit();
-		} catch (TypeError) {
-			console.error('You must define the scrapper\'s onInit() method.');
-		}
+		this.onInit();
+		
 
 		return;
 	}
